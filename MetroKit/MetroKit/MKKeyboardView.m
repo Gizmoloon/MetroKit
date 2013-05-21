@@ -118,7 +118,7 @@
             if (![button.titleLabel.text isEqualToString:@"space"] && ![button.titleLabel.text isEqualToString:@"return"])
             {
                 
-                button.titleLabel.text = button.titleLabel.text.uppercaseString;
+                [button.titleLabel setText:button.titleLabel.text.uppercaseString];
                 button.value = button.value.uppercaseString;
                 button.titleLabel.textAlignment = NSTextAlignmentLeft;
                 shiftOn = YES;
@@ -129,7 +129,7 @@
         {
             if (![button.titleLabel.text isEqualToString:@"SPACE"] && ![button.titleLabel.text isEqualToString:@"RETURN"])
             {
-                button.titleLabel.text = button.titleLabel.text.lowercaseString;
+                [button.titleLabel setText:button.titleLabel.text.lowercaseString];
                 button.value = button.value.lowercaseString;
                 shiftOn = NO;
             }
